@@ -1,0 +1,33 @@
+h2{
+  margin-left: 10%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color:white;
+}
+
+.form-group{
+  color: white;
+}
+
+.image{
+  background-image: url('C:/Users/sn264/angular/FreelancerSystem/coffee-1276782_1920.jpg');
+  height:60em; background-size:cover; width:auto;
+  background-position:100%;
+
+
+}
+input, textarea, select
+{
+background: rgba(255,255,255,0.4);
+
+}
+
+input:hover, textarea:hover, select:hover
+{
+background: white;
+
+}
+
+::placeholder {
+color: white;
+}

@@ -1,0 +1,201 @@
+
+<!-- <div class="container">
+    <h2>Register Yourself and Continue </h2>
+    <form class="form-horizontal" style="margin-top: 5%;">
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="freelancerName">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="freelancer.freelancerName" name="freelancerName" placeholder="Enter Name" ng-required>
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerEmail">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" [(ngModel)]="freelancer.freelancerEmail" name="freelancerEmail" placeholder="Enter Email" ng-required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="freelancerPhone">Phone:</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" [(ngModel)]="freelancer.freelancerPhone" name="freelancerPhone" placeholder="Enter Phone" ng-required>
+            </div>
+          </div>
+
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="freelancerPassword">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="Enter Password" ng-required>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="cpassword">Confirm Password:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" [(ngModel)]="cpassword" name="cpassword" placeholder="Confirm Password" ng-required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                  <label class="control-label col-sm-2" for="securityQuestion">Security Question:</label>
+                  <div class="col-sm-10">
+                      <div class="wrap-input100 input100-select bg1">
+                          <div class="dropdown">
+                          <select class="btn btn-default dropdown-toggle" [(ngModel)]="freelancer.securityQuestion" name="securityQuestion" ng-required >
+
+                          <option selected>What is father's name?</option>
+                          <option >What is city of birth?</option>
+                          <option >What is your childhood friend's name?</option>
+                          <option >What is first school name</option>
+                          <option >What is your favorite food?</option>
+                          </select>
+                          </div>
+                          </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="securityAnswer">Security Answer:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" [(ngModel)]="freelancer.securityAnswer" name="securityAnswer" placeholder="Enter Your Answer" ng-required>
+                    </div>
+                  </div>
+
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="freelancerSkills">Skills:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" [(ngModel)]="freelancer.freelancerSkills" name="freelancerSkills" placeholder="Enter Your Skills" ng-required></textarea>
+              </div>
+            </div>
+
+          <div class="form-group">
+              <label class="control-label col-sm-2" for="freelancerExperience">Experience:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" [(ngModel)]="freelancer.freelancerExperience" name="freelancerExperience" placeholder="Enter Your Experience" ng-required>
+              </div>
+            </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn" (click)="saveFreelancer()">Register</button>
+        </div>
+      </div>
+
+    </form>
+  </div> -->
+
+  <div class="image">
+    <div class="container">
+      <h2>Register YourSelf and Continue...</h2>
+      <form class="form-horizontal" style="margin-top: 5%;">
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerName">Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="freelancer.freelancerName" name="freelancerName"
+              placeholder="Enter Name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerEmail">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" [(ngModel)]="freelancer.freelancerEmail" name="freelancerEmail"
+              placeholder="Enter Email" required>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerPhone">Phone:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" [(ngModel)]="freelancer.freelancerPhone" name="freelancerPhone"
+              placeholder="Enter Phone" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerPassword">Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" [(ngModel)]="freelancer.freelancerPassword"
+              name="freelancerPassword" title="Must contain at least one number and one uppercase and lowercase letter, one special symbol and at least 8 or more characters" placeholder="Enter Password" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="cpassword">Confirm Password:</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" [(ngModel)]="cpassword" name="cpassword"
+              placeholder="Confirm Password" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="securityQuestion">Security Question:</label>
+          <div class="col-sm-10">
+            <div class="wrap-input100 input100-select bg1">
+              <div class="dropdown">
+                <select class="btn btn-default dropdown-toggle" [(ngModel)]="freelancer.securityQuestion"
+                  name="securityQuestion" required>
+
+                  <option selected>What is father's name?</option>
+                  <option>What is city of birth?</option>
+                  <option>What is your childhood friend's name?</option>
+                  <option>What is first school name</option>
+                  <option>What is your favorite food?</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="securityAnswer">Security Answer:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="freelancer.securityAnswer" name="securityAnswer"
+              placeholder="Enter Your Answer" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerSkills">Skills:</label>
+          <div class="col-sm-10">
+            <textarea class="form-control" [(ngModel)]="freelancer.freelancerSkills" name="freelancerSkills"
+              placeholder="Enter Your Skills" required></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="freelancerExperience">Experience:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" [(ngModel)]="freelancer.freelancerExperience"
+              name="freelancerExperience" placeholder="Enter Your Experience" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success" (click)="validateForm()">Register</button>
+          </div>
+        </div>
+
+      </form>
+      <div class="text-center p-t-12">
+        <a class="txt2" routerLink="/userlogin" routerLinkActive="active" style="font-family: sans-serif; font-weight: normal; color:white;">
+          Back
+        </a>
+      </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+

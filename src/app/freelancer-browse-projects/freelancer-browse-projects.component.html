@@ -1,0 +1,22 @@
+<div id="panel-group">
+  <div class="panel panel-default" *ngFor="let item of projects; let i = index">
+    <div class="panel-heading pointerCursor" (click) = "current = i">
+       <h5 class="panel-title">
+          <i class='glyphicon'
+            [class.glyphicon-chevron-right] = "i != current"
+            [class.glyphicon-chevron-down] = "i == current" ></i>   {{item.projectName}}
+       </h5>
+    </div>
+     <div id="collapse1" class="panel-collapse" [class.collapse]='current != i'>
+      <div class="panel-body">
+          <p>Project ID: {{item.projectId}}</p>
+          <p>Project Duration: {{item.projectDuration}}</p>
+        <p>Project Description: {{item.smallDescription}}</p>
+        <p>Project Cost: {{item.projectCost}}</p>
+        <p>Project Status: {{item.projectStatus}}</p>
+        <div><input type="button" value="Apply" (click)="Apply(item.projectId,item.projectName)"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

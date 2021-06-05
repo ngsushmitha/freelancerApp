@@ -1,0 +1,25 @@
+<h3 class="text-center" *ngIf="freelancers.length === 0" >No Rows to display</h3>
+
+<div class="container" *ngIf="freelancers.length>0">
+  <table class="table table-bordered table-hover">
+      <thead class="thead-dark">
+      <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Phone</td>
+      <td>Skills</td>
+      <td>Experience</td>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr  *ngFor = "let freelancer of freelancers">
+      <td> {{freelancer.freelancerName}} </td>
+      <td> {{freelancer.freelancerEmail}} </td>
+      <td> {{freelancer.freelancerPhone}} </td>
+      <td> {{freelancer.freelancerSkills}}</td>
+        <td>{{freelancer.freelancerExperience}}</td>
+      </tr>
+      </tbody>
+      </table>
+  </div>

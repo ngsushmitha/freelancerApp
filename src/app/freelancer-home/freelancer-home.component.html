@@ -1,0 +1,93 @@
+
+<!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/firstpage">FREELANCER-DXC</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a routerLink="freelancerhome/browseprojects" routerLinkActive="active">Browse All Projects</a></li>
+          <li><a routerLink="freelancerhome/awardedprojects" routerLinkActive="active">Awarded Projects</a></li>
+          <li><a routerLink="freelancerhome/appliedprojects" routerLinkActive="active">Applied Projects</a></li>
+          <li> <div class="search-container form-control">
+            <form>
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="freelancerhome/profile" routerLinkActive="active">My Profile</a></li>
+          <li><a routerLink="/userlogin" routerLinkActive="active">Sign Off</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <div class="topnav">
+      <a routerLink="/freelancerhome" routerLinkActive="active">FREELANCER-DXC</a>
+    <a routerLink="freelancerhome/browseprojects" routerLinkActive="active">All Projects</a>
+    <a routerLink="freelancerhome/awardedprojects" routerLinkActive="active">Awarded Projects</a>
+    <a routerLink="freelancerhome/appliedprojects" routerLinkActive="active">Applied Projects</a>
+    <div class="search-container">
+      <form>
+        <input type="text" placeholder="Type any keyword" [(ngModel)]="search" name="search">
+
+        <!-- <a [routerLink]="['freelancerhome/searchprojectfreelancer',search]" routerLinkActive="active">Search</a> -->
+
+        <!-- <a routerLink="[freelancerhome/searchprojectfreelancer]"> -->
+        <button type="submit" [routerLink]="['freelancerhome/searchprojectfreelancer',search]">Search</button>
+        <!-- </a> -->
+      </form>
+    </div>
+    <a routerLink="freelancerhome/profile" routerLinkActive="active">My Profile</a>
+    <a routerLink="/userlogin" routerLinkActive="active">Sign Off</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <h1 class="text-center">WELCOME TO FREELANCER-DXC!!!</h1>
+  </div>
+
+
+
+
+
+
+
+
+
+<!-- <div *ngFor="let project of projects">
+<div class="panel panel-primary">
+  <div class="panel-heading pointerCursor" (click)="panelExpanded = !panelExpanded">
+    <h3 class="panel-title"> {{project.projectName}}</h3>
+  </div>
+<div class="panel-body" *ngIf="panelExpanded" >
+  <div class="row">
+    <p>{{project.projectDescription}}</p>
+  </div>
+  <div class="row">
+      <input type="button" value="Apply">
+  </div>
+</div>
+</div>
+</div> -->
+
+
+<router-outlet></router-outlet>
